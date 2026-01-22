@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey7: hsl(0, 0%, 20%);
+    --grey8: hsl(0, 0%, 12%);
+    --grey9: hsl(0, 0%, 8%);
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background: var(--grey9);
+    color:var(--white)
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1.5rem;
+}
+
+.container{
+    background: var(--grey8);
+    padding: 1.25rem 1rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.image{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.profile-info h2{
+    margin: 1.75rem 0 0.75rem 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.profile-info p{
+    color: var(--green);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 1.75rem;
+}
+
+.profile-info small{
+    display: block;
+    font-weight: 400;
+    margin-bottom: 1.75rem;
+    font-size: 14px;
+}
+
+.buttons button{
+    width: 100%;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: var(--grey7);
+    color: var(--white);
+    height: 2.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+.buttons button:last-child{
+    margin-bottom: 0;
+    
+}
+
+.buttons button:hover{
+    background: var(--green);
+    color: var(--grey9);
+}
+
+@media(min-width:768px){
+    .container{
+        max-width: 375px;
+    }
+}
